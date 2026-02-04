@@ -19,7 +19,7 @@ const envSchema = z.object({
   DB_SSL: z
     .string()
     .transform((val) => val === 'true')
-    .default('false'),
+    .default(false),
 
   // Logging
   LOG_LEVEL: z
